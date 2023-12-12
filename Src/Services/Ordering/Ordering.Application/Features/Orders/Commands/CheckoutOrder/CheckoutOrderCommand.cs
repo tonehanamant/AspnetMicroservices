@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Ordering.Domain.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Ordering.Application.Features.Orders.Commands.CheckoutOrder
 {
-    public class CheckoutOrderCommand : IRequest<int>
+    public class CheckoutOrderCommand : EntityBase, IRequest<int> 
     {
         public string UserName { get; set; }
         public decimal TotalPrice { get; set; }
