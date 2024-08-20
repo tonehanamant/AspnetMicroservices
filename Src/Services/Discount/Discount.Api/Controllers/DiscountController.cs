@@ -48,6 +48,13 @@ namespace Discount.Api.Controllers
 
         [HttpPost]
         [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
+        public Task<ActionResult>? CreateRecipt()
+        {
+            return null;
+        }
+
+        [HttpPost]
+        [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
         public Task<ActionResult>? CreateContact()
         {
             return null;
