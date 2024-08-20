@@ -45,5 +45,12 @@ namespace Discount.Api.Controllers
         {
             return Ok(await _repository.DeleteDiscount(productName));
         }
+
+        [HttpPost]
+        [ProducesResponseType(typeof(void), (int)HttpStatusCode.OK)]
+        public Task<ActionResult>? CreateRecipt()
+        {
+            return null;
+        }
     }
 }
